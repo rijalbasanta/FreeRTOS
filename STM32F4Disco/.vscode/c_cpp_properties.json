@@ -1,0 +1,19 @@
+{
+        "configurations": [
+                {
+                        "name": "STM32 Debug",
+                        "includePath": [
+                                "${workspaceRoot}",
+				"${workspaceRoot}/Core/Inc",
+                                
+                                "Drivers/STM32F4xx_HAL_Driver/Inc",
+                                "Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+                                "Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                                "Drivers/CMSIS/Include",
+                                "Drivers/CMSIS/RTOS/Template"
+                        ],
+                        "intelliSenseMode": "msvc-x64"
+                }
+        ],
+        "version": 4
+}

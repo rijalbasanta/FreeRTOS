@@ -1,0 +1,55 @@
+/* 
+ * tasks.json
+ *
+* Created : 03/03/2019 1:42:37 PM (GMT)
+ *  Author : Prashant
+ *   email : 073bex425.prashant@pcampus.edu.np
+ */
+ 
+ {
+        "version": "2.0.0",
+        "options": {
+                "shell": {
+                        "executable": "cmd.exe",
+                        "args": [
+                                "/d", "/c"
+                        ]
+                },
+                "cwd": "${workspaceRoot}"
+        },
+        "tasks": [
+                {
+                        "label": "Rebuild Code",
+                        "type": "shell",
+                        "group": "build",
+                        "command": "make rebuild",
+                        "isBackground": true,
+                        "problemMatcher": [
+                                "$gcc"
+                        ]
+                },
+                {
+                        "label": "Build Code",
+                        "type": "shell",
+                        "group": "build",
+                        "command": "make",
+                        "isBackground": false,
+                        "problemMatcher": [
+                                "$gcc"
+                        ],
+                        "runOptions": {
+                                "runOn": "folderOpen"
+                        }
+                },
+                {
+                        "label": "Clean Code",
+                        "type": "shell",
+                        "group": "build",
+                        "command": "make clean",
+                        "isBackground": false,
+                        "problemMatcher": [
+                                "$gcc"
+                        ]
+                }
+        ]
+}
